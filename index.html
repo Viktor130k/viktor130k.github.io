@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>VN Consulting Company DOO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #b30000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        header {
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #990000;
+        }
+
+        nav a {
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 80px 60px;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 900px;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 90vh;
+        }
+
+        .hero-text {
+            max-width: 55%;
+        }
+
+        .hero img {
+            max-width: 40%;
+            border-radius: 8px;
+        }
+
+        /* CENTERED BLOCKS */
+        .centered {
+            text-align: center;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #990000;
+            padding: 30px;
+            border-radius: 8px;
+            flex: 1;
+        }
+
+        /* PROCESS */
+        .process {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        /* CONTACT FULL SCREEN */
+        .contact-full {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* FORM */
+        form {
+            max-width: 400px;
+            margin: 40px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #ffffff;
+            color: #b30000;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            background-color: #990000;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .hero, .cards, .process {
+                flex-direction: column;
+            }
+
+            .hero-text, .hero img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <strong>VN CONSULTING COMPANY DOO</strong>
+    <nav>
+        <a href="#services">Usluge</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>VN CONSULTING COMPANY DOO</h1>
+        <p>
+            Strateško poslovno i marketinško savetovanje za kompanije koje žele
+            jasne odluke, merljive rezultate i dugoročan rast. Kombinujemo podatke,
+            analitiku i dizajn kako bismo pomogli brendovima da se pozicioniraju
+            precizno, efikasno i konkurentno na tržištu.
+        </p>
+    </div>
+    <img src="https://plus.unsplash.com/premium_photo-1670213989449-29b83feebe8a?auto=format&fit=crop&q=60&w=600" alt="Business consulting">
+</section>
+
+<!-- 2. ABOUT -->
+<section id="about">
+    <div class="centered">
+        <h2>Ko smo mi i kako razmišljamo</h2>
+        <p>
+            VN Consulting Company DOO je savetodavna kompanija fokusirana na
+            donošenje poslovnih odluka zasnovanih na podacima, realnim tržišnim
+            pokazateljima i jasnoj strategiji. Radimo sa vlasnicima biznisa,
+            menadžmentom i marketinškim timovima koji žele strukturu, fokus i
+            kontrolu nad rastom. Ne nudimo generična rešenja — svaka strategija
+            je prilagođena konkretnom poslovnom modelu. Naš pristup spaja
+            analitiku, kreativnost i praktično iskustvo. Cilj nam je održiv rast,
+            a ne kratkoročni efekti.
+        </p>
+    </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section id="services">
+    <h2>Naše ključne usluge</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Business & Marketing Consulting</h3>
+            <p>
+                Pomažemo kompanijama da definišu jasnu poslovnu i marketinšku
+                strategiju, optimizuju procese i unaprede pozicioniranje.
+                Fokus je na rastu prihoda, efikasnijem nastupu na tržištu
+                i dugoročnoj stabilnosti poslovanja.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Data Consulting & Analitika</h3>
+            <p>
+                Analiziramo podatke iz prodaje, marketinga i operacija kako
+                bismo identifikovali prilike za rast i smanjenje troškova.
+                Donošenje odluka zasnovano na realnim brojkama, a ne pretpostavkama.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Branding & Dizajn</h3>
+            <p>
+                Razvijamo jasan vizuelni i komunikacioni identitet brenda.
+                Dizajn nije samo estetika — on mora da podrži poslovne ciljeve
+                i stvori poverenje kod klijenata.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. ADVANTAGES -->
+<section id="advantages">
+    <div class="centered">
+        <h2>Zašto kompanije biraju nas</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Praktičan pristup</h3>
+                <p>
+                    Fokusirani smo na realna rešenja koja se mogu primeniti odmah,
+                    bez komplikovanih teorija i praznih obećanja.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Odluke zasnovane na podacima</h3>
+                <p>
+                    Svaka preporuka ima osnov u analizi tržišta, podataka i
+                    stvarnih performansi biznisa.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Dugoročna vrednost</h3>
+                <p>
+                    Gradimo strategije koje donose stabilan rast, a ne kratkoročne
+                    marketinške efekte.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section id="process">
+    <h2>Kako izgleda saradnja sa nama</h2>
+
+    <div class="process">
+        <div class="card">
+            <h3>1. Analiza i razumevanje</h3>
+            <p>
+                Upoznajemo vaš biznis, tržište i ciljeve kroz detaljnu analizu
+                postojećeg stanja.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>2. Strategija i plan</h3>
+            <p>
+                Kreiramo jasan plan aktivnosti zasnovan na podacima,
+                prioritetima i budžetu.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>3. Implementacija i optimizacija</h3>
+            <p>
+                Pratimo rezultate, prilagođavamo strategiju i kontinuirano
+                unapređujemo performanse.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACT FULL -->
+<section id="contact" class="contact-full">
+    <h2>Hajde da razgovaramo o vašem biznisu</h2>
+    <p>
+        Ako želite jasnu strategiju, konkretne preporuke i pouzdanog partnera
+        u razvoju poslovanja — kontaktirajte nas putem e-maila.
+        Otvoreni smo za dugoročnu saradnju i ozbiljne projekte.
+    </p>
+
+    <p style="margin-top:20px;">
+        📧 team@vnconsultingcompany.com<br>
+        📍 12. Vojvodjanske Udarne Brigade 22, Sombor, 25101, PAK 421503
+    </p>
+
+    <!-- 7. FORM -->
+    <form>
+        <input type="text" placeholder="Vaše ime">
+        <input type="email" placeholder="Vaš e-mail">
+        <textarea rows="4" placeholder="Kratka poruka"></textarea>
+        <button>Pošalji poruku</button>
+    </form>
+</section>
+
+<!-- 8. FOOTER -->
+<footer>
+    © 2025 VN CONSULTING COMPANY DOO — Business, Marketing & Data Consulting
+</footer>
+
+</body>
+</html>
